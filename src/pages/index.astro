@@ -1,5 +1,7 @@
 ---
-
+import "../styles/global.css";
+import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 ---
 
 <html lang="en">
@@ -9,9 +11,58 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>ColumbVM FAQ</title>
+        
+		
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-[#212529] w-full">
+		<div class="w-full max-w-6xl h-10 mx-auto my-5 py-5 flex items-center justify-center pt-10">
+			<h1 class="text-white font-semibold text-4xl text-center">FAQ</h1>
+			<div class="absolute left-4">
+				<Button variant="link" className="font-mono text-white text-2xl items-center mx-auto hover:text-green-600 duration-300 "><a href="https://columbvm.altex.page/">Back</a></Button>
+		    </div>
+		</div>
+
+		<div class="max-w-2xl flex flex-wrap mx-auto justify-center">
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">What is ColumbVM?</p>
+				<p class="font-mono text-lg text-white px-3">A fork of CollabVM, where you can control virtual machines with your friends or strangers.</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">Why did I get banned?</p>
+				<p class="font-mono text-lg text-white px-3">Because you broke the ColumbVM's Rules. You are required to read them before using the site.</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">How to become Mod?</p>
+				<p class="font-mono text-lg text-white px-3">You can apply for mod <a href="https://forms.gle/n3DuTXf2zoBNPtSB9" class="hover:text-green-600 duration-300">here</a>! Do note that we only accept mods if we need some.</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">Does ColumbVM have a Discord Server?</p>
+				<p class="font-mono text-lg text-white px-3">Yes we have a <a href="https://discord.com/invite/af5BN8Jyv8" class="hover:text-green-600 duration-300">Discord server</a>!</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">What are guests and fokies?</p>
+				<p class="font-mono text-lg text-white px-3">Guests are users who didn't change their username. Fokies are users who are known to maliciously  destroy or ruin the virtual machines to annoy, intimidate and/or troll users</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">How to control the VM's?</p>
+				<p class="font-mono text-lg text-white px-3">Press take turn, it could be that you have to wait in a queue before it's your turn.</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">What does the red and green names mean?</p>
+				<p class="font-mono text-lg text-white px-3"><a class="text-red-600">Red</a> means the user is an admin. <a class="text-green-600">Green</a> means the user is an moderator.</p>
+			</Card>
+		</div>
+		<hr class="mx-auto my-5 justify-between flex border-1 border-gray-600"></hr>
+
+		<div class="h-10 justify-between flex mx-auto items-center">
+			<p class="font-mono text-white text-xs px-3">ColumbVM - 2026 | This page is made by <a href="https://www.neils1108.eu" class="hover:text-green-600 duration-300">neils1108</a></p>
+			<div class="items-center">
+				<Button variant="link" className="font-mono text-xs text-white px-3"><a href="https://columbvm.altex.page/">ColumbVM</a></Button>
+				<Button variant="link" className="font-mono text-xs text-white px-3"><a href="https://discord.com/invite/af5BN8Jyv8">ColumbVM Discord</a></Button>
+				<Button variant="link" className="font-mono text-xs text-white px-3"><a href="">ColumbVM Rules</a></Button>
+			</div>
+		</div>
 	</body>
 </html>
+
